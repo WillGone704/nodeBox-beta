@@ -1,0 +1,32 @@
+.Main{
+    h1{padding: 20px;}
+    form{
+        padding: 10em;
+        input{
+            color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-right: 10px;
+            margin-bottom: 30px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid black
+        }
+        label:nth-child(2){
+            margin-left: 20px
+        }
+        button{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 5px 20px 5px;
+            border-radius: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: gainsboro;
+            padding: 11px 20px 15px;
+            border-radius: 20px;
+        }
+    }
+}

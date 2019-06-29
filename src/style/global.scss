@@ -1,0 +1,36 @@
+
+*{
+    margin: 0px;
+}
+h1,h2,h3,h4,h5{font-family: Arial Black;}
+
+$font-size: 5vw;
+h1{font-size: $font-size;}
+h2{font-size: $font-size - 1}
+h3{font-size: $font-size - 2}
+h4{font-size: $font-size - 3}
+h5{font-size: $font-size - 4}
+
+form{
+    padding: 10px;
+    input{
+        color: black;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid black
+    }
+    label:nth-child(2){
+        margin-left: 20px
+    }
+    button{
+        padding: 5px 20px 5px;
+        border-radius: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        background-color: gainsboro;
+        padding: 11px 20px 15px;
+        border-radius: 20px;
+    }
+}

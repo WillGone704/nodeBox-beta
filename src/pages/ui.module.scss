@@ -1,0 +1,128 @@
+.Chat{
+    position: fixed;
+    background-color: white;
+    right: 5px;
+    bottom: 5px;
+    box-shadow: 4px 4px 10px gray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.userInfo{
+    width: 250px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 4px 4px black;
+    border-radius: 15px;
+    margin: 10px;
+
+    grid-area: userInfo;
+    justify-self: left;
+    figure{
+        img{
+            border-radius: 50%;
+            background-color: gainsboro;
+            margin: 5px;
+        }
+        figcaption{
+            padding: 2px;
+            background-color: greenyellow;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        div{
+            margin: 10px;
+        }
+    }
+}
+
+.topics{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: -4px 4px black;
+    border-radius: 15px;
+    margin: 10px;
+
+    grid-area: topics;
+    justify-self: center;
+}
+
+.persons{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: -4px 4px black;
+    border-radius: 15px;
+    margin: 10px;
+
+    grid-area: persons;
+    justify-self: center;
+
+}
+
+.groups{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: -4px 4px black;
+    border-radius: 15px;
+    margin: 10px;
+
+    grid-area: groups;
+    justify-self: center;
+}
+
+.posting{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color:rgba(92, 92, 92, 0.664);
+
+    div:first-child{
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        margin-top: 8em;
+        margin-left: 18em;
+    }
+}
+
+.wall{
+    width: 600px;
+    height: 485px;
+    padding: 10px;
+    overflow: y;
+    background-color: white;
+    box-shadow: 0px 4px black;
+    border-radius: 15px;
+    margin: 10px;
+
+    grid-area: wall;
+    justify-self: center;
+}
+
+.userInterface{
+    margin-top: 70px;
+    width: 1275px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: [col1] 15% [col2] auto 
+  						   [col3] 15%;
+  	grid-template-rows: [row1] 15% [row2] 15% 
+                          [row3] 15% [row4] 15%
+                          [row5] 15% [row6] 10% [row6] auto;
+    grid-template-areas: ". wall ."
+                        "userInfo wall topics"
+                        "userInfo wall persons"
+                        "userInfo wall groups"
+                        ". wall ."
+                        ". wall .";
+    grid-gap: 15px 10px;
+}

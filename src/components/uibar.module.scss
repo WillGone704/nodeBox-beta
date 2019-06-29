@@ -1,0 +1,42 @@
+.Bar{
+    padding: 0px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 4px 0px 15px gray;
+    *{display: inline;}
+    form{
+        padding: 10px 0px 10px;
+        background-color: gainsboro;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-left: 30em;
+        input{
+             color: black;
+             border: none;
+             background-color: transparent;
+             padding-left: 20px;
+             padding-right: 20px;
+        }
+        button{
+            margin-right: 0.5px;
+             padding: 2px 4px 1px;
+             border-bottom-right-radius: 15px;
+             border-top-right-radius: 15px;
+             border-bottom-left-radius: 0px;
+             border-top-left-radius: 0px;
+        }
+    }
+    figure{
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px;
+        div{
+            display: none;
+        }
+    }
+
+ }
